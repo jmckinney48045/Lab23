@@ -1,0 +1,28 @@
+﻿@model List<Movie></Movie>
+
+@*have to specify list*@
+
+<h1>Index</h1>
+
+
+
+<table class="table table-bordered"
+
+       <tr>
+           <th>Title</th>
+           <th>Genre</th>
+           <th>Runtime</th>
+       </tr>
+    @*upper class model can encompass generic name for object*@
+@foreach(var movie in Model)
+{
+    
+    <tr>
+        <td>@movie.Title</td>
+        <td>@movie.Genre</td>
+<td>@movie.Runtime</td>
+    </tr>
+}
+{
+</table>
+
